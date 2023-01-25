@@ -23,6 +23,8 @@ function App() {
               <small className="border text-center border-[#222] hover:border-[#444] hover:transition-all hover:duration-100 hover:ease-in py-2">
                 create account
               </small>
+            <button>first level</button>
+            <button>second level</button>
             </div>
           </div>
         ) : (
