@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Questions } from '../assets/Questions'
+import { levelOne } from '../assets/Questions'
 
 export default function Quiz() {
   const [score, setScore] = useState(0)
@@ -17,7 +17,7 @@ export default function Quiz() {
 
     const nextQuestion = currentQuestion + 1
 
-    if (nextQuestion < Questions.length) {
+    if (nextQuestion < levelOne.length) {
       setCurrentQuestion(nextQuestion)
     } else {
       setShowScore(true)
@@ -44,7 +44,7 @@ export default function Quiz() {
             {score}{' '}
             <span className="text-center text-xl">
               {' '}
-              out of {Questions.length}
+              out of {levelOne.length}
             </span>
           </p>
           <FinalScore />
@@ -69,14 +69,14 @@ export default function Quiz() {
                 <p className="text-xl font-bold">
                   Question {currentQuestion + 1}
                 </p>
-                /<p>{Questions.length}</p>
+                /<p>{levelOne.length}</p>
               </div>
               <h2 className="text-xl">
-                {Questions[currentQuestion].questionText}
+                {levelOne[currentQuestion].questionText}
               </h2>
             </div>
             <div className="quiz-app-options">
-              {Questions[currentQuestion].answerOptions.map(
+              {levelOne[currentQuestion].answerOptions.map(
                 (eachAnswer, index) => (
                   <ul key={index}>
                     <li
