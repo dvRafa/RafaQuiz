@@ -1,8 +1,9 @@
 import { useState } from 'react'
-import { levelOne } from '../assets/Questions'
+import  {levelTwo}  from '../assets/Questions'
 import { useLocation } from 'wouter'
 
-export default function Quiz() {
+export default function SecondLevel() {
+
   const [score, setScore] = useState(0)
   const [showScore, setShowScore] = useState(false)
   const [currentQuestion, setCurrentQuestion] = useState(0)
@@ -15,7 +16,7 @@ export default function Quiz() {
 
     const nextQuestion = currentQuestion + 1
 
-    if (nextQuestion < levelOne.length) {
+    if (nextQuestion < levelTwo.length) {
       setCurrentQuestion(nextQuestion)
     } else {
       setShowScore(true)
@@ -42,7 +43,7 @@ export default function Quiz() {
             {score}{' '}
             <span className="text-center text-xl">
               {' '}
-              out of {levelOne.length}
+              out of {levelTwo.length}
             </span>
           </p>
           <FinalScore />
@@ -67,14 +68,14 @@ export default function Quiz() {
                 <p className="text-xl font-bold">
                   Question {currentQuestion + 1}
                 </p>
-                /<p>{levelOne.length}</p>
+                /<p>{levelTwo.length}</p>
               </div>
               <h2 className="text-xl">
-                {levelOne[currentQuestion].questionText}
+                {levelTwo[currentQuestion].questionText}
               </h2>
             </div>
             <div className="quiz-app-options">
-              {levelOne[currentQuestion].answerOptions.map(
+              {levelTwo[currentQuestion].answerOptions.map(
                 (eachAnswer, index) => (
                   <ul key={index}>
                     <li

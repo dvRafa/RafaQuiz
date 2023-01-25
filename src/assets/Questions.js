@@ -30,7 +30,7 @@ export const levelOne = [
     ]
   },
 ]
-const levelTwo = [{
+export const levelTwo = [{
   id: 3,
   questionText:
     'How long does it take for light to travel from the sun to Earth?',
