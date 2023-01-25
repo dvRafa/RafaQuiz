@@ -1,0 +1,47 @@
+* {
+  color-scheme: dark;
+  background-color: #111;
+  margin: 0;
+  padding: 0;
+  font-family: system-ui;
+  font-size: 22px;
+}
+
+.quiz-app {
+  display: grid;
+  place-content: center;
+  height: 80vh;
+}
+
+.quiz-app-container {
+  width: 600px;
+  height: 200px;
+}
+
+.quiz-app-container-div {
+  display: flex;
+  flex-direction: row;
+}
+
+.quiz-app-score {
+  display: flex;
+  flex-direction: column;
+  margin-right: 70px;
+  width: 400px;
+}
+
+.quiz-app-options {
+  display: flex;
+  width: 205px;
+  flex-direction: column;
+  gap: 20px 0
+} 
+
+.quiz-app-play {
+ 
+   
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;

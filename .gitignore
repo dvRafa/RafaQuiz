@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+# Ignore artifacts:
+build
+coverage
+
 # testing
 /coverage
 
