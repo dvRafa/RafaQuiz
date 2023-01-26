@@ -1,21 +1,23 @@
 * {
-  color-scheme: dark;
-  background-color: #111;
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  color-scheme: dark;
+  background-color: #111;
   font-family: system-ui;
   font-size: 22px;
+}
+
+main {
+  display: grid;
+  place-content: center;
+  min-height: 80vh;
 }
 
 .quiz-app {
   display: grid;
   place-content: center;
-  height: 80vh;
-}
-
-.quiz-app-container {
-  width: 600px;
-  height: 200px;
+  margin: 0
 }
 
 .quiz-app-container-div {
@@ -36,11 +38,6 @@
   flex-direction: column;
   gap: 20px 0
 } 
-
-.quiz-app-play {
- 
-   
-}
 
 @tailwind base;
 @tailwind components;
