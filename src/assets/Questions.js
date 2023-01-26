@@ -1,4 +1,4 @@
-export const levelOne = [
+export const Vol = [
   {
     id: 0,
     questionText: 'Which acient civilization built the Great Pyramids?',
@@ -30,7 +30,7 @@ export const levelOne = [
     ]
   },
 ]
-export const levelTwo = [{
+export const Vol2 = [{
   id: 3,
   questionText:
     'How long does it take for light to travel from the sun to Earth?',
@@ -55,7 +55,7 @@ export const levelTwo = [{
   id: 6,
   questionText: 'What is the most popular music genre in the world?',
   answerOptions: [
-    { answerText: 'Pop', isCorrect: false },
+    { answerText: 'Pop', isCorrect: true },
     { answerText: 'Hip-Hop', isCorrect: false },
     { answerText: 'Rock', isCorrect: false },
     { answerText: 'Classical', isCorrect: false }
