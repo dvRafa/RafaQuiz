@@ -1,19 +1,16 @@
 import './global.css'
-import Quiz from './components/Quiz'
 import { Route } from 'wouter'
-import SecondLevel from './components/SecondLevel'
-import Front from './components/Front'
+import MenuComponent from 'components/Menu'
+import VolPage from 'pages/VolPage'
+import VolPage2 from 'pages/VolPage2'
 
 function App() {
   return (
-    <div className="quiz-app">
-      <div className="quiz-app-container">
-        <div className="quiz-app-play"></div>
-        <Route path="/quiz" component={Quiz} />
-        <Route path="/second-level" component={SecondLevel} />
-        <Route path="/" component={Front} />
-      </div>
-    </div>
+    <main>
+      <Route path="/" component={MenuComponent} />
+      <Route path="/vol-page" component={VolPage} />
+      <Route path="/vol-page-2" component={VolPage2} />
+    </main>
   )
 }
 
