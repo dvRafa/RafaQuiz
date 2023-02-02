@@ -1,15 +1,13 @@
 import './global.css'
 import { Route } from 'wouter'
-import MenuComponent from 'components/Menu'
-import VolPage from 'pages/VolPage'
-import VolPage2 from 'pages/VolPage2'
+import Menu from 'components/Menu'
+import EasyMode from 'components/EasyMode'
 
 function App() {
   return (
     <main>
-      <Route path="/" component={MenuComponent} />
-      <Route path="/vol-page" component={VolPage} />
-      <Route path="/vol-page-2" component={VolPage2} />
+      <Route path="/" component={Menu} />
+      <Route path="/EasyMode" component={EasyMode} />
     </main>
   )
 }
