@@ -51,6 +51,7 @@ export default function EasyMode() {
           >
             PLAY AGAIN
           </button>
+          {`The current page is: ${location}`}
         </div>
       ) : (
         <div className="quiz-app-container-div">

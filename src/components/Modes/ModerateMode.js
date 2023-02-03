@@ -54,6 +54,7 @@ export default function EasyMode() {
           >
             PLAY AGAIN
           </button>
+          {`The current page is: ${location}`}
         </div>
       ) : (
         <div className="quiz-app-container-div">
@@ -77,7 +78,7 @@ export default function EasyMode() {
             {ModerateModeQuestions[currentQuestion].answerOptions.map(
               (answerOption) => (
                 <button
-                className='border text-base rounded-md border-[#333] items-center hover:transition hover:border-[#444] py-2 hover:ease-in hover:duration-75'
+                  className="border text-base rounded-md border-[#333] items-center hover:transition hover:border-[#444] py-2 hover:ease-in hover:duration-75"
                   onClick={() =>
                     handleAnswerOptionClick(answerOption.isCorrect)
                   }
