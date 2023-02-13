@@ -1,4 +1,4 @@
 # Try to answer correctly all the questions  
 
-**Repository working link**  
+**Repository working URL**  
 https://rafaquiz.netlify.app/
