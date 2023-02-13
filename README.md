@@ -1,8 +1,4 @@
-# Create React
-Prefix 'fix' and 'feat'
-OPTIONAL scope ()
-OPTIONAL !
-REQUIRED :
+# Try to answer correctly all the questions  
 
-# Clone this repository
-
+**Repository working link**  
+https://rafaquiz.netlify.app/
